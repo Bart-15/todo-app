@@ -33,7 +33,7 @@ const Todo = () => {
         text: todo,
         completed: false,
       }
-      
+
       Toast.fire({
         icon: 'success',
         title: 'Todo added successfully',
@@ -45,10 +45,10 @@ const Todo = () => {
 
   const deleteTodo = (id) => {
     let newTodo = [...todos].filter((todo) => todo.id !== id)
-     Toast.fire({
-       icon: 'success',
-       title: 'Todo deleted successfully',
-     })
+    Toast.fire({
+      icon: 'success',
+      title: 'Todo deleted successfully',
+    })
     setTodos(newTodo)
   }
 
@@ -66,10 +66,10 @@ const Todo = () => {
     const updatedTodos = [...todos].map((todo) => {
       if (todo.id === id) {
         todo.text = editingText
-         Toast.fire({
-           icon: 'success',
-           title: 'Todo updated successfully successfully',
-         })
+        Toast.fire({
+          icon: 'success',
+          title: 'Todo updated successfully',
+        })
       }
       return todo
     })
