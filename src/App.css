@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;600&display=swap');
+
+* {
+  font-family: 'Lexend', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.todo-app {
+  background-color: #0f0a57;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.todo {
+  background: rgb(218,17,45);
+background: linear-gradient(90deg, rgba(218,17,45,1) 0%, rgba(197,26,215,0.9472163865546218) 35%, rgba(171,0,255,1) 100%);
+  padding: 2px;
+  margin: 10px;
+  text-align: left;
+  border-radius:5px;
+  color: #fff;
+}
+
+.todo-text{
+  margin-left: 10px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 13px;
+  
+}
+
+.todo-completed {
+  text-decoration: line-through;
+  margin-left: 10px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.delButton {
+  position: relative;
+  top: -40px;
+  right: 10px;
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  transition: .2s;
+  padding:8px;
+  font-size: 13px;
+}
+
+.delButton:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.editButton {
+   position: relative;
+  top: -40px;
+  right: 10px;
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  transition: .2s;
+  padding:8px;
+  font-size: 13px;
+}
+
+.editButton:hover {
+  background-color:#f07d4f;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  color: #fff;
+  background-color: #FAD0C9FF!important;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  background-color: #333!important;
+}
+.my-form {
+  background: transparent;
+  border: none;
+  border-bottom: #333 solid 2px;
+  outline: none;
+  color:#fff;
+}
+
+ul > li {
+  font-size: 13px;
+}
+@media screen and (min-width:768px){
+  .editButton,
+  .delButton,
+  .todo-text,
+  .todo-completed,
+  ul > li
+  {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px){
+    .editButton,
+  .delButton,
+  .todo-text
+  {
+    font-size: 15px;
+  }
+}
